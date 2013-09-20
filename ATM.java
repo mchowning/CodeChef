@@ -1,7 +1,7 @@
 
 import java.util.*;
 
-class HS08TEST {
+class ATM {
 
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);

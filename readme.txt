@@ -1,1 +1,1 @@
-This repository includes my solutions on CodeChef's practice problems.
+This repository has solutions to CodeChef's practice problems.
