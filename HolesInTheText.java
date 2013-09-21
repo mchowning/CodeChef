@@ -1,22 +1,19 @@
-import java.util.HashSet;
+import java.util.*;
 import java.io.*;
 
 
 class HolesInTheText {
 
-	public static void main(String[] args) throws IOException {
-		getNumHoles(System.in);
-	}
-	
-	public static void getNumHoles (InputStream is) throws IOException{
-		BufferedReader br = new BufferedReader(new InputStreamReader(is));
-		int numLines = Integer.parseInt(br.readLine());	
-		for (int i = 0; i < numLines; i++) {
-			String line = br.readLine();
-			int holes = numHoles(line);
-			System.out.println(holes);			
-		}		
-		System.exit(0);
+	public static void main(String[] args) {
+		try {
+			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+			int numLines = Integer.parseInt(br.readLine());	
+			for (int i = 0; i < numLines; i++) {
+				String line = br.readLine();
+				int holes = numHoles(line);
+				System.out.println(holes);			
+			}
+		} catch (IOException e) {}
 	}
 	
 	public static int numHoles (String str) {
